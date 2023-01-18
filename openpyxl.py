@@ -21,7 +21,7 @@ def search(KEYWORD):
     featured_snippets = browser.find_elements(By.CLASS_NAME,"LGOjhe")
     return featured_snippets
 
-text = search("キリン")
+text = search("第二次イオン分析")#←とりあえず入れてるだけ、ここには文字認識等から得られた単語入れる予定
 print(text[0].text)
 
 browser.quit()
